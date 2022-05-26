@@ -13,7 +13,7 @@ Future<DataModel?> getSinglePostData() async {
   //Android: deviceLocalHostAPI_URL="http://10.0.2.2:8000/";
   //iOS: The iOS Simulator uses the host machine network so you should be able to just use localhost or your machines IP address, whichever IP your web service is listening on.
 
-  String deviceLocalHostAPI_URL = "http://10.0.2.2:8000/";
+  String deviceLocalHostAPI_URL = "http://10.0.2.2:8000/api";
   try {
     final response = await http.get(
       Uri.parse(deviceLocalHostAPI_URL),
