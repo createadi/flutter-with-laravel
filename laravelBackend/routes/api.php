@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::get('/', function () {
+    // return view('welcome');
+    return response()->json(["title" => "Server Message", "body"=>"Hello from server!"]);
 });
